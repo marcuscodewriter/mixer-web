@@ -1,38 +1,121 @@
+:root {
+  --primary-color: #00aaff; /* Match the primary blue/cyan color */
+  --secondary-color: #005f80; /* Darker blue for contrast */
+  --accent-color: #ffffff; /* White for text and highlights */
+  --background-color: #002233; /* Dark blue background */
+}
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  background-color: var(--background-color);
+  color: var(--accent-color);
+  min-height: 100vh;
+  width: 100%; /* Ensure the app takes the full width of the viewport */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: var(--secondary-color);
+  padding: 12px;
+  box-sizing: border-box;
+  width: 100%; /* Ensure the header takes the full width of the viewport */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-color);
+  padding: 5px 10px;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 12px;
+}
+
+.navbar-title {
+  font-size: 24px;
+  font-weight: bold;
+  white-space: nowrap; /* Prevent wrapping of the title */
+}
+
+.navbar-links {
+  display: flex;
+  gap: 20px;
+  padding-left: 20px;
+  align-items: center;
+}
+
+.navbar-links a {
+  color: var(--accent-color);
+  text-decoration: none;
+  padding: 5px;
+  transition: background-color 0.3s;
+}
+
+.navbar-links a:hover {
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+}
+
+.navbar-links a .icon {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+
+.about-section {
+  padding: 20px;
+  text-align: left;
+  box-sizing: border-box;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.about-section h2 {
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.description {
+  line-height: 1.6;
+  margin-bottom: 10px;
+  max-width: 800px;
+  text-align: justify;
+}
+
+.screenshot-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 20px;
+  box-sizing: border-box;
+  justify-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.screenshot {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 600px) {
+  .navbar-links a {
+    font-size: 0;
   }
-  to {
-    transform: rotate(360deg);
+
+  .navbar-links a::before {
+    content: attr(data-icon);
+    font-size: 24px;
   }
 }
