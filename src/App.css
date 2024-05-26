@@ -50,6 +50,8 @@ body {
   gap: 20px;
   padding-left: 20px;
   align-items: center;
+  font-weight: bold;
+  font-size: 22px;
 }
 
 .navbar-links a {
@@ -116,6 +118,6 @@ body {
 
   .navbar-links a::before {
     content: attr(data-icon);
-    font-size: 24px;
+    font-size: 22px;
   }
 }
