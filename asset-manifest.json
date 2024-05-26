@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/ton-mixer-web/static/css/main.97cb1d31.css",
+    "main.js": "/ton-mixer-web/static/js/main.c5c253fb.js",
+    "static/js/453.9adec744.chunk.js": "/ton-mixer-web/static/js/453.9adec744.chunk.js",
+    "static/media/screenshot2.png": "/ton-mixer-web/static/media/screenshot2.414794432a3646293132.png",
+    "static/media/screenshot4.png": "/ton-mixer-web/static/media/screenshot4.630b6a78c02e1747c78c.png",
+    "static/media/screenshot5.png": "/ton-mixer-web/static/media/screenshot5.e5530a171bdea252110e.png",
+    "static/media/screenshot1.png": "/ton-mixer-web/static/media/screenshot1.0632f12a033ef0f5a545.png",
+    "static/media/screenshot3.png": "/ton-mixer-web/static/media/screenshot3.483c0a403df71be9e48a.png",
+    "static/media/screenshot0.png": "/ton-mixer-web/static/media/screenshot0.3f2c5c488ce671627d9f.png",
+    "index.html": "/ton-mixer-web/index.html",
+    "main.97cb1d31.css.map": "/ton-mixer-web/static/css/main.97cb1d31.css.map",
+    "main.c5c253fb.js.map": "/ton-mixer-web/static/js/main.c5c253fb.js.map",
+    "453.9adec744.chunk.js.map": "/ton-mixer-web/static/js/453.9adec744.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.97cb1d31.css",
+    "static/js/main.c5c253fb.js"
+  ]
+}
