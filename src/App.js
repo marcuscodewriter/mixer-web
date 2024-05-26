@@ -21,6 +21,8 @@ function App() {
         </nav>
       </header>
       <section id="about" className="about-section">
+        <p style={{ fontSize: '14px', textAlign: 'center', marginTop: 0 }}>* We have just begun creating our team, socials & community please be patient as we build *</p>
+        <h3 style={{ textAlign: 'center', marginTop: 0 }}><a style={{ color: 'lightblue', textAlign: 'center' }} href="https://t.me/TON_mix_bot" target="_">Bot is ready for use</a> and our <a style={{ color: 'lightblue' }} href="https://t.me/tonmixerchat" target='_'>community chat</a> is up and running</h3>
         <h2>About $TON Mixer</h2>
         <p style={{ textAlign: 'center' }} className="description">$TON Mixer offers an easy solution for anonymizing your $TON transfers.</p>
         <p style={{ textAlign: 'left', paddingTop: 0, marginTop: 0 }} className="description"><ul><li>Simply input the amount of $TON you wish to mix, along with the destination address.</li><li>Then a deposit address is generated and displayed for you to send your $TON.</li> <li>Upon confirmation of deposit the bot will go through several steps to mix and finally return your $TON into the destination address.</li></ul> <em><br/>During the process the mixer keeps a live update on the status of your exchange for you to monitor its progress.</em></p>
