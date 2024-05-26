@@ -16,7 +16,7 @@ function App() {
           <div className="navbar-links">
             <a href="https://t.me/TON_mix_bot" target="_" data-icon="🔀 Mixer">🔀 Mixer</a>
             <a href="https://t.me/tonmixerchat" target="_" data-icon="📲 TG">📲 Telegram</a>
-            <a href="https://x.com/tonmixerbot" target="_" data-icon="𝕏">𝕏</a>
+            <a href="https://x.com/tonmixbot" target="_" data-icon="𝕏">𝕏</a>
           </div>
         </nav>
       </header>
