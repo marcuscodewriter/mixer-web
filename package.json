@@ -37,7 +37,7 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://marcuscodewriter.github.io/ton-mixer-web",
+  "homepage": "https://marcuscodewriter.github.io/mixer-web",
   "devDependencies": {
     "gh-pages": "^6.1.1"
   }
