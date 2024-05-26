@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/mixer-web/static/css/main.97cb1d31.css",
-    "main.js": "/mixer-web/static/js/main.e3450fe6.js",
+    "main.css": "/mixer-web/static/css/main.95a88513.css",
+    "main.js": "/mixer-web/static/js/main.07c48fde.js",
     "static/js/453.9adec744.chunk.js": "/mixer-web/static/js/453.9adec744.chunk.js",
     "static/media/screenshot2.png": "/mixer-web/static/media/screenshot2.414794432a3646293132.png",
     "static/media/screenshot4.png": "/mixer-web/static/media/screenshot4.630b6a78c02e1747c78c.png",
@@ -10,12 +10,12 @@
     "static/media/screenshot3.png": "/mixer-web/static/media/screenshot3.483c0a403df71be9e48a.png",
     "static/media/screenshot0.png": "/mixer-web/static/media/screenshot0.3f2c5c488ce671627d9f.png",
     "index.html": "/mixer-web/index.html",
-    "main.97cb1d31.css.map": "/mixer-web/static/css/main.97cb1d31.css.map",
-    "main.e3450fe6.js.map": "/mixer-web/static/js/main.e3450fe6.js.map",
+    "main.95a88513.css.map": "/mixer-web/static/css/main.95a88513.css.map",
+    "main.07c48fde.js.map": "/mixer-web/static/js/main.07c48fde.js.map",
     "453.9adec744.chunk.js.map": "/mixer-web/static/js/453.9adec744.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.97cb1d31.css",
-    "static/js/main.e3450fe6.js"
+    "static/css/main.95a88513.css",
+    "static/js/main.07c48fde.js"
   ]
 }
