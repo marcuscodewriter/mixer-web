@@ -88,6 +88,9 @@ export default function LandingPage() {
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
       <Hero />
       <Divider />
+      <center style={{ marginTop: '20px', marginBottom: '12px' }}>
+        <iframe style={{ alignContent: 'center', borderRadius: '12px' }} height="666" width="90%" id="geckoterminal-embed" title="$MIXER" src="https://app.ston.fi/swap?chartVisible=false&ft=TON&tt=EQAdFbynSUlzIlh_I4fXuYaer3rvY0TG0BK-NQZ-Y871pZoM" frameBorder="0" allow="clipboard-write" allowFullScreen=""></iframe>
+      </center>
       {/* <div style={{ width: '100%', justifyContent: 'center' }}>
         <div className="screenshot-grid" style={{ width: '20px auto'}}>
           <img src={screenshot0} alt="Screenshot 0" className="screenshot"/>
@@ -97,8 +100,8 @@ export default function LandingPage() {
           <img src={screenshot4} alt="Screenshot 4" className="screenshot"/>
           <img src={screenshot5} alt="Screenshot 5" className="screenshot"/>
         </div>
-      </div>
-      <Divider /> */}
+      </div> */}
+      <Divider />
       <Footer />
       {/* <Box sx={{ bgcolor: 'background.default' }}>
         {/* <LogoCollection />
