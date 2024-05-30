@@ -136,7 +136,7 @@ export default function Hero() {
             </Typography> */}
         </Stack>
         <StyledBox id="image" style={{ margin: '20px 20px 20px 20px', padding: '8px 8px 8px 24px', fontFamily: 'sans-serif', height: 'min-content' }}>
-          <ul style={{ margin: '0 0 18px 0', padding: 0, fontFamily: 'sans-serif', fontSize: '16px' }}>
+          <ul style={{ margin: '2px 0 18px 0', padding: 0, fontFamily: 'sans-serif', fontSize: '16px' }}>
             <li style={{marginBottom: '12px'}}>Simply input the amount of $TON you wish to mix, along with the destination address.</li>
             <li style={{marginBottom: '12px'}}>Then a deposit address is generated and displayed for you to send your $TON.</li>
             <li >Upon confirmation of deposit the bot will go through several steps to mix and finally return your $TON into the destination address.</li>
@@ -144,7 +144,7 @@ export default function Hero() {
           <p style={{ fontSize: '15px', paddingTop: '12px' }}><b>This entire process allows users to scramble and mix their $TON such that the trail of transactions cannot be followed, nor can their funds be linked to any previous addresses.</b></p>
           <p style={{ fontSize: '15px', paddingTop: '8px' }}><em>During the process the mixer keeps a live update on the status of your exchange for you to monitor its progress.</em></p>
 
-          <p style={{ fontSize: '15px', paddingTop: '8px' }}><em>Fees:<br/>0.8% of every TX goes toward buybacks & burns</em>
+          <p style={{ fontSize: '15px', paddingTop: '8px', marginBottom: '2px' }}><em>Fees:<br/>0.8% of every TX goes toward buybacks & burns</em>
 
           <br/><em>Network Fee: ~0.03 - 1 TON<br/><span style={{ fontSize: '14px' }}>Higher if mixing larger amounts {'>='} 80 TON</span></em></p>
         </StyledBox>
