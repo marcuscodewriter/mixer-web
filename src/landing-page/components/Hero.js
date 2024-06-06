@@ -322,9 +322,10 @@ export default function Hero() {
           <a style={{ textDecoration: 'none', color: '#00aaff', marginBottom: '6px' }} href="https://x.com/tonmixbot" target="_">X: @tonmixerbot</a>
             <a style={{ textDecoration: 'none', color: '#00aaff', marginBottom: '6px' }} href="https://t.me/tonmixerchat" target="_">TG: @tonmixerchat</a>
             <a style={{ textDecoration: 'none', color: '#00aaff', marginBottom: '6px' }} href="https://t.me/ton_mix_bot" target="_">Mixer: @ton_mix_bot</a>
+            <br/>
             <span style={{ textDecoration: 'none', cursor: 'pointer' }} onClick={copyCa} >$MIXER CA: <em>EQAdFbynSUlzIlh_I4fXuYaer3rvY0TG0BK-NQZ-Y871pZoM</em></span>
             <br/>
-            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', margin: '12px 0 0 0' }}>
+            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
               <img style={{ height: '40px', margin: '20px', cursor: 'pointer' }} src={dextoolsLogo} onClick={() => window.open('https://www.dextools.io/app/en/ton/pair-explorer/EQAUSQROzbfAEC-x0UmKBybyT35U3WRr6k5daPMizWvY8rOk', '_')} alt='Dextools' />
               •
               <img style={{ height: '40px', margin: '20px', cursor: 'pointer' }} src={dexscreenerLogo} onClick={() => window.open('https://dexscreener.com/ton/eqausqrozbfaec-x0umkbybyt35u3wrr6k5dapmizwvy8rok', '_')} alt='Dexscreener' />
