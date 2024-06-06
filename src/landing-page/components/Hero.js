@@ -228,6 +228,11 @@ export default function Hero() {
   //   }
   // }
 
+  const copyCa = () => {
+    navigator.clipboard.writeText('EQAdFbynSUlzIlh_I4fXuYaer3rvY0TG0BK-NQZ-Y871pZoM');
+    alert('Copied to clipboard');
+  }
+
   return (
     <Box
       id="hero"
@@ -299,7 +304,7 @@ export default function Hero() {
             sx={{ width: { sm: '100%', md: '80%' } }}
             fontFamily={'sans-serif'}
           >
-            Bridge supports withdrawals/deposits between<br/>TON ↔️ (BTC, ETH, SOL, BASE, BTC, BNB, MATIC)
+            Explore our cutting-edge mixer bot right from within Telegram, anonymize your $TON transfers with ease.
           </Typography>
           <Typography
             textAlign="center"
@@ -307,8 +312,21 @@ export default function Hero() {
             sx={{ width: { sm: '100%', md: '80%' } }}
             fontFamily={'sans-serif'}
           >
-            Explore our cutting-edge mixer bot right from within Telegram, anonymize your $TON transfers with ease.
+            Bridge supports withdrawals/deposits between<br/>TON ↔️ (BTC, ETH, SOL, BASE, BTC, BNB, MATIC)
           </Typography>
+          <StyledBox style={{ margin: '12px 0 12px 0', padding: '12px', textAlign: 'center', alignItems: 'center', justifyContent: 'center', display: 'flex', height: 'min-content', width: 'min-content', minWidth: '85%'}}>
+          <Typography
+            textAlign="center"
+            color="text.secondary"
+            sx={{ width: { sm: '100%', md: '80%' } }}
+            fontFamily={'sans-serif'}
+          >
+            <a style={{ textDecoration: 'none', color: '#00aaff', marginBottom: '4px' }} href="https://x.com/tonmixbot" target="_">X: @tonmixerbot</a><br/>
+            <a style={{ textDecoration: 'none', color: '#00aaff', marginBottom: '4px' }} href="https://t.me/tonmixerchat" target="_">TG: @tonmixerchat</a><br/>
+            <a style={{ textDecoration: 'none', color: '#00aaff', marginBottom: '4px' }} href="https://t.me/ton_mix_bot" target="_">Mixer: @ton_mix_bot</a><br/>
+            <span style={{ textDecoration: 'none', cursor: 'pointer' }} onClick={copyCa} >$MIXER CA: <em>EQAdFbynSUlzIlh_I4fXuYaer3rvY0TG0BK-NQZ-Y871pZoM</em></span>
+          </Typography>
+          </StyledBox>
         </Stack>
         {/* <StyledBox id="image" style={{ margin: '20px 20px 20px 20px', padding: '0 16px 16px 16px', fontFamily: 'sans-serif', height: 'min-content', textAlign: 'center' }}>
           <h2 style={{ fontFamily: 'sans-serif', fontSize: '40px', margin: '12px 0 0 0', letterSpacing: 1.2 }}>Mixer Dapp</h2>
