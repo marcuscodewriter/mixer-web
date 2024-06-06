@@ -332,6 +332,8 @@ export default function Hero() {
               •
               <img style={{ height: '40px', margin: '20px', cursor: 'pointer' }} src={geckoTerminalLogo} onClick={() => window.open('https://www.geckoterminal.com/ton/pools/EQAUSQROzbfAEC-x0UmKBybyT35U3WRr6k5daPMizWvY8rOk', '_')} alt='Gecko Terminal' />
             </div>
+            <br/>
+            <a style={{ textDecoration: 'none', color: '#00aaff', marginBottom: '6px' }} href="mailto:tonmixerbot@gmail.com" target="_">tonmixerbot@gmail.com</a>
           </StyledBox>
         </Stack>
         {/* <StyledBox id="image" style={{ margin: '20px 20px 20px 20px', padding: '0 16px 16px 16px', fontFamily: 'sans-serif', height: 'min-content', textAlign: 'center' }}>
