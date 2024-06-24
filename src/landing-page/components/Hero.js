@@ -1,4 +1,5 @@
 import * as React from 'react';
+import './Hero.css';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
@@ -317,24 +318,47 @@ export default function Hero() {
           >
             Bridge supports withdrawals/deposits between<br/>TON ↔️ (BTC, ETH, SOL, BASE, BTC, BNB, MATIC)
           </Typography>
-          <StyledBox style={{ flexDirection: 'column', fontFamily: 'sans-serif', margin: '6px 0 12px 0', padding: '12px 12px 15px 12px', textAlign: 'center', alignItems: 'center', justifyContent: 'center', display: 'flex', height: 'min-content', width: 'min-content', minWidth: '85%'}}>
-          <h1 style={{ margin: '0px 10px 15px 10px', fontWeight: 'bold'}}>Socials</h1>
-          <a style={{ textDecoration: 'none', color: '#00aaff', marginBottom: '6px' }} href="https://x.com/tonmixbot" target="_">X: @tonmixerbot</a>
-            <a style={{ textDecoration: 'none', color: '#00aaff', marginBottom: '6px' }} href="https://t.me/tonmixerchat" target="_">TG: @tonmixerchat</a>
-            <a style={{ textDecoration: 'none', color: '#00aaff', marginBottom: '6px' }} href="https://t.me/ton_mix_bot" target="_">Mixer: @ton_mix_bot</a>
-            <br/>
-            <span style={{ textDecoration: 'none', cursor: 'pointer' }} onClick={copyCa} >$MIXER CA: <em>EQAdFbynSUlzIlh_I4fXuYaer3rvY0TG0BK-NQZ-Y871pZoM</em></span>
-            <br/>
-            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-              <img style={{ height: '40px', margin: '20px', cursor: 'pointer' }} src={dextoolsLogo} onClick={() => window.open('https://www.dextools.io/app/en/ton/pair-explorer/EQAUSQROzbfAEC-x0UmKBybyT35U3WRr6k5daPMizWvY8rOk', '_')} alt='Dextools' />
-              •
-              <img style={{ height: '40px', margin: '20px', cursor: 'pointer' }} src={dexscreenerLogo} onClick={() => window.open('https://dexscreener.com/ton/eqausqrozbfaec-x0umkbybyt35u3wrr6k5dapmizwvy8rok', '_')} alt='Dexscreener' />
-              •
-              <img style={{ height: '40px', margin: '20px', cursor: 'pointer' }} src={geckoTerminalLogo} onClick={() => window.open('https://www.geckoterminal.com/ton/pools/EQAUSQROzbfAEC-x0UmKBybyT35U3WRr6k5daPMizWvY8rOk', '_')} alt='Gecko Terminal' />
-            </div>
-            <br/>
-            <a style={{ textDecoration: 'none', color: '#00aaff', marginBottom: '6px' }} href="mailto:tonmixerbot@gmail.com" target="_">tonmixerbot@gmail.com</a>
-          </StyledBox>
+          {/* <div style={{ display: 'flex', width: '50vw', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', marginTop: '8px', marginBottom: '8px' }}>
+            <iframe src="https://app.chartbrew.com/chart/85108975-be3f-4e4f-b25f-4abbe970f10c/embedded?theme=light" allowTransparency={false} width={700} height={300} scrolling={false} frameborder={0} style={{ backgroundColor: '#ffffff', borderRadius: '12px', marginRight: '12px' }}></iframe>
+            <iframe src={"https://app.chartbrew.com/chart/c5f29878-3c6b-4064-98c1-88655b624e9e/embedded?theme=light"} allowTransparency={false} width={700} height={300} scrolling={false} frameborder={0} style={{ backgroundColor: '#ffffff', borderRadius: '12px', marginLeft: '12px' }}></iframe>
+          </div> */}
+          <div style={{ 
+            display: 'flex', 
+            width: '66vw', 
+            flexDirection: 'column', 
+            justifyContent: 'center', 
+            alignItems: 'center', 
+            marginTop: '8px', 
+            marginBottom: '4px' 
+          }} className="chart-container">
+            <iframe src="https://app.chartbrew.com/chart/85108975-be3f-4e4f-b25f-4abbe970f10c/embedded?theme=light" 
+              allowTransparency={false} 
+              width={'100%'}
+              maxwidth={700}
+              height={300} 
+              scrolling='no'
+              onScroll={false}
+              frameborder={0} 
+              style={{ 
+                backgroundColor: '#ffffff', 
+                borderRadius: '25px', 
+                // marginRight: '12px' 
+              }}></iframe>
+            <div style={{ height: '25px' }}></div>
+            <iframe src="https://app.chartbrew.com/chart/c5f29878-3c6b-4064-98c1-88655b624e9e/embedded?theme=light" 
+              allowTransparency={false} 
+              width={'100%'}
+              maxwidth={700} 
+              height={180} 
+              scrolling='no'
+              onScroll={false}
+              frameborder={0} 
+              style={{ 
+                backgroundColor: '#ffffff', 
+                borderRadius: '25px', 
+                // marginLeft: '12px' 
+              }}></iframe>
+          </div>
         </Stack>
         {/* <StyledBox id="image" style={{ margin: '20px 20px 20px 20px', padding: '0 16px 16px 16px', fontFamily: 'sans-serif', height: 'min-content', textAlign: 'center' }}>
           <h2 style={{ fontFamily: 'sans-serif', fontSize: '40px', margin: '12px 0 0 0', letterSpacing: 1.2 }}>Mixer Dapp</h2>
@@ -362,7 +386,7 @@ export default function Hero() {
           </form>
         </StyledBox> */}
         <Divider/>
-        <StyledBox id="image" style={{ textAlign: 'center', margin: '20px 20px 2px 20px', padding: '8px 8px 15px 24px', fontFamily: 'sans-serif', height: 'min-content' }}>
+        <StyledBox id="image" style={{ width: '75vw', textAlign: 'center', margin: '20px 20px 2px 20px', padding: '8px 8px 15px 24px', fontFamily: 'sans-serif', height: 'min-content' }}>
           <h1 style={{ margin: '0px 10px 15px 10px', fontWeight: 'bold'}} >About</h1>
           {/* <ul style={{ margin: '2px 0 18px 0', padding: 0, fontFamily: 'sans-serif', fontSize: '16px' }}> */}
             <text style={{marginBottom: '12px'}}><b>Simply send /start to our <b><a style={{ color: '#00aaff', fontSize: 18 }} href="https://t.me/ton_mix_bot" target='_'>$Mixer Bot</a></b> and follow the user-friendly flow to mix your $NOT or $TON <br/> or <br/> Bridge between TON ↔️ BTC | ETH | SOL | BASE | BNB | MATIC</b></text>
@@ -378,15 +402,36 @@ export default function Hero() {
 
           <br/><em>Network Fee: ~0.03 - 1 TON<br/><span style={{ fontSize: '14px' }}></span></em></p>
         </StyledBox>
-        <StyledBox id="image" style={{ fontWeight: 700, letterSpacing: '0.5px', textAlign: 'center', margin: '5px 5px 10px 5px', padding: '8px 8px 12px 24px', fontFamily: 'sans-serif', height: 'min-content' }}>
-          <h1 style={{ margin: '10px'}} > $MIXER Tokenomics</h1>
-          <p style={{ fontSize: '15px', margin: '14px 0 14px' }}><em><b><a style={{ textDecoration: 'none', color: '#00aaff', fontSize: 18, margin: '0 12px' }} href="https://tonviewer.com/EQAdFbynSUlzIlh_I4fXuYaer3rvY0TG0BK-NQZ-Y871pZoM?section=jetton" target='_'>CA: Renounced</a></b></em> | <em><b><a style={{ textDecoration: 'none', color: '#00aaff', fontSize: 18, margin: '0 12px' }} href="https://tonviewer.com/EQAUSQROzbfAEC-x0UmKBybyT35U3WRr6k5daPMizWvY8rOk?section=holders" target='_'>LP Burned</a></b></em> | <em><b><a style={{ textDecoration: 'none', color: '#00aaff', fontSize: 18, margin: '0 12px' }} href="https://www.geckoterminal.com/ton/pools/EQAUSQROzbfAEC-x0UmKBybyT35U3WRr6k5daPMizWvY8rOk" target='_'>📈 Chart</a></b></em></p>
-          <p style={{ fontSize: '15px', margin: '6px 0' }}></p>
-          <p style={{ fontSize: '15px', margin: '6px 0' }}><em>Max Supply: 100m</em></p>
-          <p style={{ fontSize: '15px', margin: '6px 0' }}><em>Total Supply: 90.7m</em></p>
-          <p style={{ fontSize: '15px', margin: '4px 00' }}><em>Burned: 9.3% Supply</em></p>
+        <div style={{ width: '90vw', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
+          {/* <div style={{ width: '40vw',  marginRight: '12px' }}> */}
+            <StyledBox id="image" style={{ width: '75vw', fontWeight: 700, letterSpacing: '0.5px', textAlign: 'center', margin: '12px 5px 10px 5px', padding: '8px 8px 12px 24px', fontFamily: 'sans-serif', height: 'min-content' }}>
+              <h1 style={{ margin: '10px'}} > $MIXER Tokenomics</h1>
+              <p style={{ fontSize: '15px', margin: '14px 0 14px' }}><em><b><a style={{ textDecoration: 'none', color: '#00aaff', fontSize: 18, margin: '0 12px' }} href="https://tonviewer.com/EQAdFbynSUlzIlh_I4fXuYaer3rvY0TG0BK-NQZ-Y871pZoM?section=jetton" target='_'>CA: Renounced</a></b></em> | <em><b><a style={{ textDecoration: 'none', color: '#00aaff', fontSize: 18, margin: '0 12px' }} href="https://tonviewer.com/EQAUSQROzbfAEC-x0UmKBybyT35U3WRr6k5daPMizWvY8rOk?section=holders" target='_'>LP Burned</a></b></em> | <em><b><a style={{ textDecoration: 'none', color: '#00aaff', fontSize: 18, margin: '0 12px' }} href="https://www.geckoterminal.com/ton/pools/EQAUSQROzbfAEC-x0UmKBybyT35U3WRr6k5daPMizWvY8rOk" target='_'>📈 Chart</a></b></em></p>
+              <p style={{ fontSize: '15px', margin: '6px 0' }}></p>
+              <p style={{ fontSize: '15px', margin: '6px 0' }}><em>Max Supply: 100m</em></p>
+              <p style={{ fontSize: '15px', margin: '6px 0' }}><em>Total Supply: 90.7m</em></p>
+              <p style={{ fontSize: '15px', margin: '4px 00' }}><em>Burned: 9.3% Supply</em></p>
 
-        </StyledBox>
+            </StyledBox>
+          <StyledBox style={{ flexDirection: 'column', fontFamily: 'sans-serif', margin: '6px 0 20px 0', padding: '12px 12px 15px 12px', textAlign: 'center', alignItems: 'center', justifyContent: 'center', display: 'flex', height: 'min-content', width: 'min-content', minWidth: '85%'}}>
+            <h1 style={{ margin: '0px 10px 15px 10px', fontWeight: 'bold'}}>Socials</h1>
+            <a style={{ textDecoration: 'none', color: '#00aaff', marginBottom: '6px' }} href="https://x.com/tonmixbot" target="_">X: @tonmixerbot</a>
+            <a style={{ textDecoration: 'none', color: '#00aaff', marginBottom: '6px' }} href="https://t.me/tonmixerchat" target="_">TG: @tonmixerchat</a>
+            <a style={{ textDecoration: 'none', color: '#00aaff', marginBottom: '6px' }} href="https://t.me/ton_mix_bot" target="_">Mixer: @ton_mix_bot</a>
+            <br/>
+            <span style={{ textDecoration: 'none', cursor: 'pointer' }} onClick={copyCa} >$MIXER CA: <em>EQAdFbynSUlzIlh_I4fXuYaer3rvY0TG0BK-NQZ-Y871pZoM</em></span>
+            <br/>
+            <div style={{ width: '40vw', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+              <img style={{ height: '40px', margin: '20px', cursor: 'pointer' }} src={dextoolsLogo} onClick={() => window.open('https://www.dextools.io/app/en/ton/pair-explorer/EQAUSQROzbfAEC-x0UmKBybyT35U3WRr6k5daPMizWvY8rOk', '_')} alt='Dextools' />
+              •
+              <img style={{ height: '40px', margin: '20px', cursor: 'pointer' }} src={dexscreenerLogo} onClick={() => window.open('https://dexscreener.com/ton/eqausqrozbfaec-x0umkbybyt35u3wrr6k5dapmizwvy8rok', '_')} alt='Dexscreener' />
+              •
+              <img style={{ height: '40px', margin: '20px', cursor: 'pointer' }} src={geckoTerminalLogo} onClick={() => window.open('https://www.geckoterminal.com/ton/pools/EQAUSQROzbfAEC-x0UmKBybyT35U3WRr6k5daPMizWvY8rOk', '_')} alt='Gecko Terminal' />
+            </div>
+            <br/>
+            <a style={{ textDecoration: 'none', color: '#00aaff', marginBottom: '6px' }} href="mailto:tonmixerbot@gmail.com" target="_">tonmixerbot@gmail.com</a>
+          </StyledBox>
+        </div>
       </Container>
     </Box>
   );
