@@ -169,7 +169,7 @@ export default function Footer() {
         }}
       >
         <div style={{ fontFamily: 'sans-serif', fontWeight: 'bold' }}>
-          $TON Mixer &copy; {new Date().getFullYear()}
+          $MIXER Bridge &copy; {new Date().getFullYear()}
           {/* <Link color="text.secondary" variant="body2" href="#">
             Privacy Policy
           </Link>

@@ -276,7 +276,7 @@ export default function Hero() {
             }}
             fontFamily={'sans-serif'}
           >
-            $TON&nbsp;
+            $MIXER&nbsp;
             <Typography
               component="span"
               variant="h1"
@@ -287,19 +287,7 @@ export default function Hero() {
               }}
               fontFamily={'sans-serif'}
             >
-              Mixer&nbsp;
-              <Typography
-                component="span"
-                variant="h1"
-                sx={{
-                  fontSize: 'inherit',
-                  color: (theme) =>
-                    theme.palette.mode === 'light' ? 'primary.main' : 'primary.light',
-                }}
-                fontFamily={'sans-serif'}
-              >
-                + Bridge
-              </Typography>
+              Bridge&nbsp;
             </Typography>
           </Typography>
           <Typography
@@ -308,7 +296,7 @@ export default function Hero() {
             sx={{ width: { sm: '100%', md: '80%' } }}
             fontFamily={'sans-serif'}
           >
-            Explore our cutting-edge mixer bot right from within Telegram, anonymize your $TON transfers with ease.
+            Explore our cutting-edge bridge bot right from within Telegram, bridge between 30+ chains with ease.
           </Typography>
           <Typography
             textAlign="center"
@@ -331,6 +319,20 @@ export default function Hero() {
             marginTop: '8px', 
             marginBottom: '4px' 
           }} className="chart-container">
+            <iframe src="https://app.chartbrew.com/chart/de38c797-6ced-4052-adb3-eb534a32665f/embedded?theme=light" 
+              allowTransparency={false} 
+              width={'100%'}
+              maxwidth={700}
+              height={180} 
+              scrolling='no'
+              onScroll={false}
+              frameborder={0} 
+              style={{ 
+                backgroundColor: '#ffffff', 
+                borderRadius: '25px', 
+                // marginRight: '12px' 
+              }}></iframe>
+            <div style={{ height: '25px' }}></div>
             <iframe src="https://app.chartbrew.com/chart/85108975-be3f-4e4f-b25f-4abbe970f10c/embedded?theme=light" 
               allowTransparency={false} 
               width={'100%'}
@@ -389,18 +391,18 @@ export default function Hero() {
         <StyledBox id="image" style={{ width: '75vw', textAlign: 'center', margin: '20px 20px 2px 20px', padding: '8px 8px 15px 24px', fontFamily: 'sans-serif', height: 'min-content' }}>
           <h1 style={{ margin: '0px 10px 15px 10px', fontWeight: 'bold'}} >About</h1>
           {/* <ul style={{ margin: '2px 0 18px 0', padding: 0, fontFamily: 'sans-serif', fontSize: '16px' }}> */}
-            <text style={{marginBottom: '12px'}}><b>Simply send /start to our <b><a style={{ color: '#00aaff', fontSize: 18 }} href="https://t.me/ton_mix_bot" target='_'>$Mixer Bot</a></b> and follow the user-friendly flow to mix your $NOT or $TON <br/> or <br/> Bridge between TON ↔️ BTC | ETH | SOL | BASE | BNB | MATIC</b></text>
+            <text style={{marginBottom: '12px'}}><b>Simply send /start to our <b><a style={{ color: '#00aaff', fontSize: 18 }} href="https://t.me/ton_mix_bot" target='_'>bridge bot</a></b> and follow the steps to bridge your funds between our available chains!</b></text>
             {/* <li style={{marginBottom: '12px'}}>Then a deposit address is generated and displayed for you to send your $TON.</li>
             <li >Upon confirmation of deposit the bot will go through several steps to mix and finally return your $TON into the destination address.</li> */}
           {/* </ul> */}
           <br/>
           <br/>
-          <p style={{ fontSize: '15px' }}><b>This bot keeps users's wallet addresses concealed and anonymous while transferring $NOT and $TON to any address, allowing them transact in private!</b></p>
-          <p style={{ fontSize: '15px'}}><em>During the process the mixer keeps a live update on the status of your exchange for you to monitor its progress via Telegram message.</em></p>
+          <p style={{ fontSize: '15px' }}><b>This bot allows users to conveniently swap tokens cross-chain while remaining right within Telegram!</b></p>
+          <p style={{ fontSize: '15px'}}><em>During the process the bot keeps a live update via Telegram message on the status of your bridge order for you to monitor its progress.</em></p>
 
-          <p style={{ fontSize: '15px', paddingTop: '20px', marginBottom: '2px' }}><em>Fees:<br/>0.4% of every TX goes toward buybacks & burns</em>
+          <p style={{ fontSize: '15px', paddingTop: '20px', marginBottom: '2px' }}><em>Fees:<br/>0.6% of every bridge is taken for rev share, marketing and buybacks</em>
 
-          <br/><em>Network Fee: ~0.03 - 1 TON<br/><span style={{ fontSize: '14px' }}></span></em></p>
+          <br/></p>
         </StyledBox>
         <div style={{ width: '90vw', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
           {/* <div style={{ width: '40vw',  marginRight: '12px' }}> */}
@@ -409,8 +411,8 @@ export default function Hero() {
               <p style={{ fontSize: '15px', margin: '14px 0 14px' }}><em><b><a style={{ textDecoration: 'none', color: '#00aaff', fontSize: 18, margin: '0 12px' }} href="https://tonviewer.com/EQAdFbynSUlzIlh_I4fXuYaer3rvY0TG0BK-NQZ-Y871pZoM?section=jetton" target='_'>CA: Renounced</a></b></em> | <em><b><a style={{ textDecoration: 'none', color: '#00aaff', fontSize: 18, margin: '0 12px' }} href="https://tonviewer.com/EQAUSQROzbfAEC-x0UmKBybyT35U3WRr6k5daPMizWvY8rOk?section=holders" target='_'>LP Burned</a></b></em> | <em><b><a style={{ textDecoration: 'none', color: '#00aaff', fontSize: 18, margin: '0 12px' }} href="https://www.geckoterminal.com/ton/pools/EQAUSQROzbfAEC-x0UmKBybyT35U3WRr6k5daPMizWvY8rOk" target='_'>📈 Chart</a></b></em></p>
               <p style={{ fontSize: '15px', margin: '6px 0' }}></p>
               <p style={{ fontSize: '15px', margin: '6px 0' }}><em>Max Supply: 100m</em></p>
-              <p style={{ fontSize: '15px', margin: '6px 0' }}><em>Total Supply: 90.7m</em></p>
-              <p style={{ fontSize: '15px', margin: '4px 00' }}><em>Burned: 9.3% Supply</em></p>
+              <p style={{ fontSize: '15px', margin: '6px 0' }}><em>Total Supply: 89.8m</em></p>
+              <p style={{ fontSize: '15px', margin: '4px 00' }}><em>Burned: 10.2% Supply</em></p>
 
             </StyledBox>
           <StyledBox style={{ flexDirection: 'column', fontFamily: 'sans-serif', margin: '6px 0 20px 0', padding: '12px 12px 15px 12px', textAlign: 'center', alignItems: 'center', justifyContent: 'center', display: 'flex', height: 'min-content', width: 'min-content', minWidth: '85%'}}>
