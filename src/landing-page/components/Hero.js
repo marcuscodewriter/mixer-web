@@ -346,7 +346,7 @@ export default function Hero() {
                 borderRadius: '25px', 
                 // marginRight: '12px' 
               }}></iframe>
-            <div style={{ height: '25px' }}></div>
+            {/* <div style={{ height: '25px' }}></div>
             <iframe src="https://app.chartbrew.com/chart/c5f29878-3c6b-4064-98c1-88655b624e9e/embedded?theme=light" 
               allowTransparency={false} 
               width={'100%'}
@@ -359,7 +359,7 @@ export default function Hero() {
                 backgroundColor: '#ffffff', 
                 borderRadius: '25px', 
                 // marginLeft: '12px' 
-              }}></iframe>
+              }}></iframe> */}
           </div>
         </Stack>
         {/* <StyledBox id="image" style={{ margin: '20px 20px 20px 20px', padding: '0 16px 16px 16px', fontFamily: 'sans-serif', height: 'min-content', textAlign: 'center' }}>
